@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #1B92E2;
+}
+input:focus {
+    outline: 1px solid #1B92E2; /* Çizgi rengini ve kalınlığını ayarlar */
+}
+a:hover {
+    text-decoration: underline;
+}
+#main {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi orantılı olarak tamamen kapla */
+    position: fixed; /* Resmi sabit konumda tut */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Sayfanın üzerinde olmasını sağlar */
+    font-family: 'ForX';
+   
+    
+}
+#kll {
+    color: #E7E9EA; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#ksm {
+    height: 30px;
+}
+
+
+#carpi {
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;  
+    border-radius: 0px; 
+    padding: 10px; 
+    display: inline; 
+    color: white;
+    margin-left: 5px;
+    margin-top: 15px; 
+    text-align: start;
+}
+#bti {
+    width: 30px; 
+    height: 30px;
+}
+#ghc {
+    text-align: center; 
+    display: inline; 
+    margin-left: calc(100% - 65%);
+}
+#hg {
+    width: 30px; 
+    height: 30px;
+}
+#ils {
+    font-size: 2rem; 
+    padding: 10px;
+}
+#kjs {
+    font-family: 'beko'; 
+    margin-top: 20px; 
+    margin-left: 80px; 
+    margin-right: 80px; 
+    display: flex; 
+    flex-direction: column;
+}
+#lop {
+    margin-top: 20px;
+}
+#girisler {
+    margin-top: 30px; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'beko';
+}
+#Telefon {
+    border-radius: 5px; 
+    padding: 10px; 
+    height: 56px; 
+    margin-top: 30px; 
+    color: white; 
+    background-color: black; 
+    border: 0.5px solid #333639;
+}
+#isim {
+    border-radius: 5px; 
+    padding: 10px; 
+    height: 56px; 
+    color: white; 
+    background-color: black; 
+    border: 0.5px solid #333639;
+}
+#eposta {
+    font-size: 1rem; 
+    margin-top: 15px; 
+    display: flex;
+    justify-content: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#day {
+    cursor: pointer;
+    margin-left: 7px; border-radius: 5px; 
+    background-color: black; 
+    color: #64686D; 
+    border: 0.5px solid #64686D; 
+    width: 118px;
+    height: 50px;
+}
+#ja {
+    color: #71767B; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 10px; 
+    font-size: 0.9rem;
+}
+#dg {
+    margin-top: 20px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#kayit {
+    cursor: pointer; 
+    font-size: 1.1rem; 
+    font-family: 'beko'; 
+    border-radius: 30px; 
+    margin-top: 90px; 
+    color: black; 
+    background-color: #EFF3F4; 
+    width: 450px; 
+    height: 50px;
+}
+#year {
+    cursor: pointer; 
+    border-radius: 5px; 
+    background-color: black; 
+    color: #64686D; 
+    border: 0.5px solid #64686D;
+    width: 197px; 
+    height: 50px;
+}
+#month {
+    cursor: pointer; 
+    margin-left: 7px; 
+    border-radius: 5px; background-color: black; 
+    color: #64686D;
+    border: 0.5px solid #64686D; 
+    width: 95px; 
+    height: 50px;
+}
+@font-face {
+    font-family: 'ForX'; /* Buraya bir isim verin */
+    src: url('../arial/ARIALBLACKITALIC.TTF'); /* .ttf dosyasının yolunu ekleyin */
+    }
+@font-face {
+    font-family: 'beko'; /* Buraya bir isim verin */
+    src: url('../arial/ARIALBD\ 1.TTF'); /* .ttf dosyasının yolunu ekleyin */
+    }
+#xlogo {
+    width: calc(100% - 50%);
+    height: calc(100% -50%);
+    /* display: inline; */
+    position: absolute;
+    left: 0;
+    margin-top: 210px;
+    margin-left: 200px;
+    /* position: relative; */
+    
+}
+#giris {
+    width: calc(100% - 50%);
+    height: calc(100% - 50%);
+    /* display: inline; */
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+#xlogo img {
+    display: inline;
+}
+#baslik h1 {
+    font-size: 4.5rem;
+    margin-top: 80px;
+    /* margin-left: 10px; */
+}
+#baslik {
+    width: 620px;
+    height: 160px;
+}
+#apple {
+    border-radius: 35px;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+}
+#google {
+    width: 300px;
+    border-radius: 35px;
+    margin-top: 30px;
+    height: 40px;
+}
+#plp {
+    font-size: 2rem; 
+    padding: 10px;
+}
+.ohg {
+    color: white; 
+    text-align: center; 
+    display: inline; 
+    margin-left: calc(100% - 65%);
+}
+body {
+    position: relative;
+}
+.p {
+    font-size: 1.7rem; 
+    color: white; 
+    font-family: 'beko';
+}
+.pkl {
+    width: 364px; 
+    margin-left: 140px;
+    margin-top: 30px; 
+    margin-right: 140px; 
+    height: 537px;
+}
+#google {
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    text-align: center;
+    background-color: white;
+}
+.yer {
+    display: flex; 
+    flex-direction: column;
+}
+.s {
+    margin-left: 10px; 
+    font-size: 0.9rem; 
+    margin-top: 12px; 
+    font-family: 'beko';
+}
+#oklm {
+    margin-top: 5px; 
+    width: 20px;
+    height: 25px;
+}
+#fkfo {
+    font-family: 'beko'; 
+    font-size: 1.3rem;  
+    color: white;
+
+}
+#apple {
+    margin-top: 20px; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+    background-color: white;
+}
+#plat {
+    width: 25px; 
+    height: 25px; 
+    margin-top: 5px;
+}
+#kskss {
+    margin-left: 5px; 
+    font-size: 0.9rem; 
+    margin-top: 12px; 
+    font-family: 'beko';
+
+}
+#lol {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi orantılı olarak tamamen kapla */
+    position: fixed; /* Resmi sabit konumda tut */
+    top: 0;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
+    /* display: flex; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* z-index: -99; */
+    display: none;
+}
+#hesapolusturma {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmi orantılı olarak tamamen kapla */
+    position: fixed; /* Resmi sabit konumda tut */
+    top: 0;
+    left: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#ohom {
+    border-radius: 20px;
+    width: 600px;
+    height: 650px;
+    background-color: black;
+    /* display: none; */
+    
+
+}
+#name {
+    color: white; 
+    padding: 10px;
+    width: 300px; 
+    height: 56px; 
+    border-radius: 5px; 
+    border: 1px solid #333639; 
+    background-color: black;
+}
+#ofof {
+    margin-top: 10px; 
+    width: 300px; 
+    text-align: center;
+
+}
+#lsdf {
+    font-family: 'beko'; 
+    color: white;
+}
+#pass {
+    color: white; 
+    padding: 10px;
+    width: 300px;
+    margin-top: 10px; 
+    height: 56px; 
+    border-radius: 5px; 
+    order: 1px solid #333639; 
+    background-color: black;
+}
+#ufh {
+    cursor: pointer; 
+    border-radius: 30px; 
+    margin-top: 15px; 
+    font-family: 'beko'; 
+    font-size: 1rem; 
+    background-color: white; 
+    border: none; 
+    color: black; 
+    width: 295px; 
+    height: 45px;
+}
+#ic {
+    border-radius: 20px;
+    width: 600px;
+    height: 650px;
+    background-color: black;
+    color: white;
+    /* display: none; */
+    
+    /* flex-direction: row; */
+}
+#carpi {
+    background-color: black;
+}
+#carpi:hover {
+    opacity: 0.7;
+
+}

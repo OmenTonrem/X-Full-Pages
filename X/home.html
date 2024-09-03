@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/Ekran görüntüsü 2024-07-15 012154.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div style="height: 4000px; " id="main">
+        <div id="yonlendirici">
+            <div>
+                <i id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; font-size: 2rem; margin-top: 10px; margin-bottom: 10px;" class="fa-brands fa-x-twitter"></i>
+                <a style="color: white;" href="home.html"><p id="sa" style="margin-left: -20px; display: flex; justify-content: center; align-items: center; width: 135px; height: 50px; font-size: 1.1rem;"><i style="align-items: center; font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-house"></i>Home</p></a>
+                <a style="color: white;" href="explore.html"><p id="sa" style="margin-left: -20px; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-magnifying-glass"></i>Explore</p></a>
+                <a style="color: white;" href="notifications.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 180px; height: 50px; font-size: 1.1rem; " ><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-regular fa-bell"></i>Notifications</p></a> <!-- <i class="fa-solid fa-bell"></i> -->
+                <a style="color: white;" href="message.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 155px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-envelope"></i>Messages</p></a>
+                <a style="color: white;" href="grok.html"><p id="sa" style="margin-left: -25px; display: flex; justify-content: center; align-items: center; width: 130px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-paper-plane"></i>Grok</p></a> 
+                <a style="color: white;" href="bookmarks.html"><p id="sa" style="margin-left: -10px; display: flex; justify-content: center; align-items: center; width: 160px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-bookmark"></i>Bookmarks</p></a>
+                <a style="color: white;" href="community.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 185px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-users"></i>Communities</p></a>
+                <a style="color: white;" href="premium.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-brands fa-x-twitter"></i>Premium</p></a>
+                <a style="color: white;" href="profile.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 130px; height: 50px; font-size: 1.1rem; ;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-user"></i>Profile</p></a>
+                <p id="sa" onclick="settings()" onblur="settingsnone()" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 120px; height: 50px; font-size: 1.1rem; ;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-bars"></i>More</p>
+            </div>
+            <button style="border: none; cursor: pointer; color: white; background-color: #1D9BF0; margin-top: 15px; width: 233px; border-radius: 30px; font-family: 'beko'; font-size: 1.1rem; height: 50px;">Post</button>
+            <div>
+                <div id="kisi" style="cursor: pointer; margin-top: 30px; display: flex; width: 250px; border-radius: 30px;">
+                    <img style=" border-radius: 40px; width: 50px; height: 50px;" src="img/deneme1.png" alt="">
+                    <div style="display: flex; flex-direction: column">
+                        <p style="cursor: default; font-family: 'beko'; margin-left: 5px; margin-top: 10px;">OmenTonrem <i style="font-size: 0.8rem;" class="fa-solid fa-lock"></i></p>
+                        <p style="cursor: default; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #71767B;">@Omen</p>
+                    </div>
+                    <div id="na"> 
+                        <i style="cursor: pointer; margin-top: 17px; margin-left: 40px; font-size: 1.3rem;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+            </div>
+            <div id="Settings" style="display: none; flex-direction: column; box-shadow: 0 0 8px rgba(244, 244, 239, 0.8); position: absolute; left: -5px; bottom: 140px; z-index: 10; background-color: #000; border-radius: 15px; width: 318px; height: 448px;">
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 22px; height: 28px;" src="img/lists.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Lists</p>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 25px; height: 18px;" src="img/moni.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Monetization</p>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 20px; height: 24px;" src="img/verified.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Verified Orgs</p>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 23px; height: 23px;" src="img/sss05.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Follower Requests</p>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 23px; height: 24px;" src="img/02139.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Ads</p>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 24px; height: 25px;" src="img/sasasa202234.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Jobs</p>
+                    <div style="display: flex; align-items: center; justify-content: center; border-radius: 7px; margin-left: 160px; width: 37px; height: 20px; color: #FFE0C2;  background-color: #491600;">
+                        <p style="font-size: 0.8rem;">Beta</p>
+                    </div>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 26px; height: 26px;" src="img/mic.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Create your Space</p>
+                </div>
+                <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                    <img style="margin-left: 15px; width: 26px; height: 28px;" src="img/682121.png" alt="">
+                    <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Settings and Privacy</p>
+                </div>  
+            </div>
+        </div>
+        
+        <div id="welcomer">
+            <div>
+                <div style=" width: 600px; height: 54px; text-align: center; align-items: center; justify-content: space-around; display: flex;">
+                    <div onclick="p()" id="olur" style=" display: flex; justify-content: center; align-items: center; width: 300px; height: 52px;">
+                        <p id="ls" style="color: white; margin-left: 40px;">For you</p>
+                        <div id="kkf" style="display: inline; margin-top: 49px;">
+                            <div style=" border-radius: 20px; width: 55px;">
+                                <div style="margin-left: -55px; border-radius: 20px; width: 55px; border: 2px solid #1D9BF0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="o()" id="olur" style="display: flex; justify-content: center; align-items: center; width: 290px; height: 52px;">
+                        <p id="leftten40">Following</p>
+                        <div id="inlineolcak" style="display: none; margin-top: 49px;">
+                            <div style=" border-radius: 20px; width: 55px;">
+                                
+                                <div style="margin-left: -65px; border-radius: 20px; width: 55px; border: 2px solid #1D9BF0;"></div>
+                            </div>
+                        </div>
+                    </div>
+     
+                </div>
+            </div>
+            <div style="height: 5000px; width: 600px; overflow: hidden;">
+                <div id="kss" style="background-color: black;  width: 600px; height: 130px; border: 1px solid #2F3336;">
+                    <div style="font-family: 'beko'; display: flex; ">
+                        <div>
+                            <img style="cursor: pointer; margin: 15px; width: 40px; height: 40px; border-radius: 30px;" src="img/deneme1.png" alt="">
+                           
+                            <div id="med" onclick="n()" style=" display: inline; position: absolute; top: 70px;">
+                                <input id="med" style="padding-top: 20px; padding-bottom: 20px; color: white; border: none; font-size: 1.2rem; background-color: black; width: 514px; height: 28px;" type="text" placeholder="What is happening?!">
+                            </div>
+                            <div id="kk" style="display: none; font-size: 0.9rem; margin-left: 70px; display: flex; color: #1D9BF0;">
+                                <a id="tm" style="display: none;" href=""><i class="fa-solid fa-earth-americas"></i></a>
+                                <a id="mm" style="display: none;" href=""><p style="margin-left: 10px;">Everyone can reply</p></a>
+                                
+                                
+                            </div>
+                            <div id="ok" style="display: none; border-bottom: 1px solid #2F3336; margin-left: 50px; margin-top: 10px; width: 525px; height: 5px;"></div>
+                            <div style="width: 514px; height: 48px; display: flex; align-items: center; margin-left: 70px;">
+                                <i style="cursor: pointer; color: #1D9BF0;" class="fa-regular fa-image"></i>
+                                <img style="margin-left: 20px; cursor: pointer; width: 16px; height: 16px;" src="img/Ekran görüntüsü 2024-07-19 133825.png" alt="">
+                                <img style="margin-left: 20px; width: 16px; cursor: pointer; height: 16px;" src="img/sss.png" alt="">
+                                <i style="margin-left: 20px; cursor: pointer; color: #1D9BF0;" class="fa-regular fa-face-smile"></i>
+                                <img style="margin-left: 20px; width: 16px; cursor: pointer; height: 16px;" src="img/21.png" alt="">
+                                <div style="display: flex; justify-content: flex-end; width: 350px;">
+                                    <button style="cursor: pointer; font-family: 'ForX'; background-color: #1D9BF0; border: none; color: white; border-radius: 20px; width: 66px; height: 36px;">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                </div>
+                <!-- show post kısmı buraya eklenebilir -->
+                
+                <div  style="border: 1px solid #2F3336; width: 600px; height: 3000px; overflow: auto;">
+                    <div style="margin: 15px; display: flex; font-family: 'beko'; ">
+                        <img style="width: 40px; height: 40px;" src="img/kisi.png" alt="">
+                        <div style="display: flex; width: 518px; height: 20px;  flex-direction: column;">
+                            <div style=" display: flex; align-items: center;">
+                                <p style="margin-bottom: 2px; margin-left: 10px; color: white;">Mentally I’m Here</p>
+                                <i style="color: white;" class="fa-solid fa-ellipsis"></i>
+                                <img style="margin-left: 5px; width: 20px; height: 20px;" src="img/23.png" alt="">
+                                <p style="font-family: Arial, Helvetica, sans-serif; margin-left: 3px; margin-right: 5px; color: #71767B;">@mentalolarakk</p>
+                                <p style="font-family: Arial, Helvetica, sans-serif; margin-right: 3px; color: #71767B;">·</p>
+                                <p style="font-family: Arial, Helvetica, sans-serif; color: #71767B;">jul 18</p>
+                                <i style="cursor: pointer; margin-left: 160px; color: #71767B;  margin-right: -70px;" class="fa-solid fa-ellipsis"></i>
+                                
+                            </div>
+                            
+                            <div>
+                                <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; color: white; margin-left: 10px;">hayatının en zor dönemini geçiriyorsundur ve yanında kimse yoktur…</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div style=" display: flex; justify-content: end; margin: 15px 15px 0px 15px;">
+                        <video controls autoplay style="border-radius: 30px; background-position: center; background-size: cover; width: 518px; height: 313px;" src="img/vid.mp4"></video>
+                        
+                    </div>
+                    <p style="margin-left: 65px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">From <a style="color: white;" href="">arşiv</a></p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; width: 518px; height: 20px; margin-top: 10px; margin-left: 60px;">
+                        <!-- istatisikler -->
+                        <div style="align-items: center; width: 50px; height: 20px; display: flex;">
+                            <i onmouseover="yorum()" onmouseleave="yorumsuz()" id="yorum" style="cursor: pointer; width: 16px; height: 15px; color: #71767B;" class="fa-regular fa-comment"></i>
+                            <p onmouseover="yorum()" onmouseleave="yorumsuz()" id="yorumsuz" style="margin-left: 5px; cursor: pointer; margin-right: 10px; font-size: 0.8rem; font-family: Arial, Helvetica, sans-serif;">1.6K</p>
+                        </div>
+                        <div style="margin-left: 30px; align-items: center; width: 50px; height: 20px; display: flex;">
+                            <i id="oynatma" onmouseover="oynatma()"  onmouseleave="oynatmama()" style="cursor: pointer; width: 16px; height: 15px; color: #71767B;" class="fa-solid fa-repeat"></i>
+                            <p id="oynatmama" onmouseleave="oynatmama()" onmouseover="oynatma()" style="margin-left: 5px; cursor: pointer; margin-right: 10px; font-size: 0.8rem; font-family: Arial, Helvetica, sans-serif;">6.6K</p>
+                        </div>
+                        <div  style="margin-left: 30px; margin-right: 10px; align-items: center; width: 50px; height: 20px; display: flex;">
+                            <i onmouseover="kalp()" onmouseleave="kalpsiz()" id="kalp" style="cursor: pointer; width: 16px; height: 15px; color: #71767B;" class="fa-regular fa-heart"></i>
+                            <p onmouseover="kalp()" onmouseleave="kalpsiz()" id="kalpsayi" style="margin-left: 5px; cursor: pointer; margin-right: 10px; font-size: 0.8rem; font-family: Arial, Helvetica, sans-serif;">129.1K</p>
+                        </div>
+                        <div style="margin-left: 30px; align-items: center; width: 50px; height: 20px; display: flex;">
+                            <i id="istatik" onmouseleave="istatistik()" onmouseover="istatik()" style="cursor: pointer; width: 113px; color: #71767B;" class="fa-solid fa-chart-simple"></i>
+                            <p id="istatistik" onmouseleave="istatistik()" onmouseover="istatik()" style="margin-left: 5px; cursor: pointer; margin-right: 10px; font-size: 0.8rem; font-family: Arial, Helvetica, sans-serif;">89M</p>
+                        </div>
+                        <div id="lok" style=" display: flex; justify-content: center; align-items: center; margin-right: -30px;  width: 30px; border-radius: 15px; height: 30px;">
+                            <i style=" display: flex; justify-content: center; align-items: center; border-radius: 10px;  cursor: pointer; width: 30px;  height: 30px; " class="fa-regular fa-bookmark"></i>
+                        </div>
+                        <div id="lok" style=" display: flex; justify-content: center; align-items: center; width: 30px; border-radius: 15px; height: 30px;">
+                            <i  style="display: flex; justify-content: center; align-items: center; border-radius: 10px;  cursor: pointer; width: 30px;  height: 30px;" class="fa-solid fa-arrow-up-from-bracket"></i>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px; border: 1px solid #2F3336;"></div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div  style="position: fixed; font-family: 'beko'; position: absolute; top: 0; right: 0; width: 350px; overflow: hidden; height: 1110px; margin-right: 150px; background-color: #000;">
+            <div style="margin-top: 5px; display: flex; align-items: center; flex-direction: column; ">
+                <i id="ll" style=" position: absolute; top: 15px; left: 3px; margin-left: 15px; top: 10; z-index: 1; font-size: 1.2rem; color: #2F3336; " class="fa-solid fa-magnifying-glass"></i>
+                <div id="inp" style="position: fixed;">
+                    <input onclick="l()" onblur="an()" id="inp1" style="padding-right: 45px; font-size: 1rem; color: white;  padding-left: 50px; border-radius: 20px; border: none; width: 348px; height: 42px; background-color: #202327;" type="text" autocapitalize="sentences" autocomplete="off" autocorrect="off" placeholder="Search" spellcheck="false" enterkeyhint="search" type="text" dir="auto" aria-activedescendant="typeaheadFocus-0.05564283137717263" aria-autocomplete="list" aria-label="Search query" aria-owns="typeaheadDropdown-13" role="combobox">
+                    
+                </div>
+                <div id="flexolcak" style= " z-index: 1; position: absolute; top: 13px; right: 10px; display: none; justify-content: center; align-items: center; width: 25px; height: 25px; border-radius: 20px; background-color: #1D9BF0;">
+                    <i style=" font-size: 1.1rem;  padding: 4px 4px 4px 4px; " class="fa-solid fa-xmark"></i>
+                </div>
+                <div style="margin-top: 40px;">
+                    <div style="background-color: #000;  width: 350px; height: 145px; border-radius: 15px; border: 1px solid #2F3336; margin-top: 15px;">
+                        <h3 style="font-size: 1.3rem; color: #E7E9EA; margin: 15px;">Subscribe to Premium</h3>
+                        <p style="margin-left: 15px; margin-top: -5px; margin-right: 15px; color: #DBDDDE; font-family: Arial, Helvetica, sans-serif;"> Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                        <div style="margin-left: 10px; margin-top: 10px;  display: flex; justify-content: center; align-items: center; width: 113px; height: 40px; border-radius: 20px; background-color: #1D9BF0;">
+                            <a href="premium.html" id="knksa" style="margin-top: 30px; color: white; cursor: pointer; ">Subscribe</a>
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; width: 348px; height: 920px; overflow: auto; border-radius: 15px; border: 1px solid #2F3336;">
+                        <div style="margin: 15px;">
+                            <h2 style="font-family: 'beko'; font-size: 1.3rem; color: white;">Trends for you</h2>
+                        </div>
+                        <div id="trend" style="position: relative; cursor: pointer; width: 352px; height: 82px; display: flex; ">
+                            <div style="display: flex; flex-direction: column;">
+                                <p style="font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Trending in Turkey</p>
+                                <p style="color: #fff; margin-left: 15px; margin-top: 5px;">#DilanPolatAklandı</p>
+                                <p style="font-size: 0.8rem; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">50.9k posts</p>
+                            </div>
+                            <div style="display: flex;">
+                                <i style="cursor: pointer; color: #71767B; position: absolute; right: 25px; top: 10px;" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div id="trend" style="cursor: pointer; width: 352px; height: 82px; display: flex; flex-direction: column; position: relative;">
+                            <div style="display: flex; flex-direction: column;">
+                                <p style="font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Trending in Turkey</p>
+                                <p style="color: #fff; margin-left: 15px; margin-top: 5px;">#wattpadgeriacılsın</p>
+                                <p style="font-size: 0.8rem; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">20k posts</p>
+                            </div>
+                            <div style="display: flex;">
+                                <i style="cursor: pointer; color: #71767B; position: absolute; right: 25px; top: 10px;" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div id="trend" style="cursor: pointer; width: 352px; position: relative; height: 82px; display: flex; flex-direction: column;">
+                            <div style="display: flex; flex-direction: column;">
+                                <p style="font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Trending in Turkey</p>
+                                <p style="color: #fff; margin-left: 15px; margin-top: 5px;">#siber</p>
+                                <p style="font-size: 0.8rem; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">19k posts</p>
+                            </div>
+                            <div style="display: flex;">
+                                <i style="cursor: pointer; color: #71767B; position: absolute; right: 25px; top: 10px;" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div id="trend" style="cursor: pointer; width: 352px; height: 82px; display: flex; flex-direction: column; position: relative;">
+                            <div>
+                                <p style="font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Politics · Trending</p>
+                                <p style="color: #fff; margin-left: 15px; margin-top: 5px;">#Atatürk</p>
+                                <p style="font-size: 0.8rem; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">56k posts</p>
+                                <div style="display: flex;">
+                                    <i style="cursor: pointer; color: #71767B; position: absolute; right: 25px; top: 10px;" class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="trend" style="cursor: pointer; width: 352px; height: 82px; display: flex; flex-direction: column; position: relative;">
+                            <p style="font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Politics · Trending</p>
+                            <p style="color: #fff; margin-left: 15px; margin-top: 5px;">#istifaRteistifa</p>
+                            <p style="font-size: 0.8rem; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">30.5k posts</p>
+                            <div style="display: flex;">
+                                <i style="cursor: pointer; color: #71767B; position: absolute; right: 25px; top: 10px;" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        <div id="trend" style="cursor: pointer; width: 352px; height: 82px; display: flex; flex-direction: column; position: relative;">
+                            <p style="font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">News · Trending</p>
+                            <p style="color: #fff; margin-left: 15px; margin-top: 5px;">#yangın</p>
+                            <p style="font-size: 0.8rem; margin-top: 5px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">129k posts</p>
+                            <div style="display: flex;">
+                                <i style="cursor: pointer; color: #71767B; position: absolute; right: 25px; top: 10px;" class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <input autocapitalize="sentences" autocomplete="off" autocorrect="off" placeholder="Search" spellcheck="false" enterkeyhint="search" type="text" dir="auto" aria-activedescendant="typeaheadFocus-0.05564283137717263" aria-autocomplete="list" aria-label="Search query" aria-owns="typeaheadDropdown-13" role="combobox" class="r-30o5oe r-1dz5y72 r-1niwhzg r-17gur6a r-1yadl64 r-deolkf r-homxoj r-poiln3 r-7cikom r-1ny4l3l r-xyw6el r-13qz1uu r-fdjqy7" data-testid="SearchBox_Search_Input" value aria-expanded="true"> -->

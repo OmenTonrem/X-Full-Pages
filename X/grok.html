@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/Ekran görüntüsü 2024-07-15 012154.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok / X</title>
+    <link rel="stylesheet" href="css/grok.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div id="yonlendirici" style="border-right: 1px solid #2F3336;">
+            <div>
+                <i id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; font-size: 2rem; margin-top: 10px; margin-bottom: 10px;" class="fa-brands fa-x-twitter"></i>
+                <a style="color: white;" href="home.html"><p id="sa" style="margin-left: -20px; display: flex; justify-content: center; align-items: center; width: 135px; height: 50px; font-size: 1.1rem;"><i style="align-items: center; font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-house"></i>Home</p></a>
+                <a style="color: white;" href="explore.html"><p id="sa" style="margin-left: -20px; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-magnifying-glass"></i>Explore</p></a>
+                <a style="color: white;" href="notifications.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 180px; height: 50px; font-size: 1.1rem; " ><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-regular fa-bell"></i>Notifications</p></a> <!-- <i class="fa-solid fa-bell"></i> -->
+                <a style="color: white;" href="message.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 155px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-envelope"></i>Messages</p></a>
+                <a style="color: white;" href="grok.html"><p id="sa" style="margin-left: -25px; display: flex; justify-content: center; align-items: center; width: 130px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-paper-plane"></i>Grok</p></a> 
+                <a style="color: white;" href="bookmarks.html"><p id="sa" style="margin-left: -10px; display: flex; justify-content: center; align-items: center; width: 160px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-bookmark"></i>Bookmarks</p></a>
+                <a style="color: white;" href="community.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 185px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-users"></i>Communities</p></a>
+                <a style="color: white;" href="premium.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-brands fa-x-twitter"></i>Premium</p></a>
+                <a style="color: white;" href="profile.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 130px; height: 50px; font-size: 1.1rem; ;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-user"></i>Profile</p></a>
+                <p id="sa" onclick="settings()" onblur="settingsnone()" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 120px; height: 50px; font-size: 1.1rem; ;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-bars"></i>More</p>
+            </div>
+            <button style="border: none; cursor: pointer; color: white; background-color: #1D9BF0; margin-top: 15px; width: 233px; border-radius: 30px; font-family: 'beko'; font-size: 1.1rem; height: 50px;">Post</button>
+            <div>
+                <div id="kisi" style="cursor: pointer; margin-top: 30px; display: flex; width: 250px; border-radius: 30px;">
+                    <img style=" border-radius: 40px; width: 50px; height: 50px;" src="img/deneme1.png" alt="">
+                    <div style="display: flex; flex-direction: column">
+                        <p style="cursor: default; font-family: 'beko'; margin-left: 5px; margin-top: 10px;">OmenTonrem <i style="font-size: 0.8rem;" class="fa-solid fa-lock"></i></p>
+                        <p style="cursor: default; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #71767B;">@Omen</p>
+                    </div>
+                    <div id="na">
+                        <i style="cursor: pointer; margin-top: 15px; margin-left: 50px; color: #E7E9EA;" class="fa-solid fa-ellipsis" ></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Settings" style="display: none; flex-direction: column; box-shadow: 0 0 8px rgba(244, 244, 239, 0.8); position: absolute; left: 150px; bottom: 150px; z-index: 10; background-color: #000; border-radius: 15px; width: 318px; height: 448px;">
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 22px; height: 28px;" src="img/lists.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Lists</p>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 25px; height: 18px;" src="img/moni.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Monetization</p>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 20px; height: 24px;" src="img/verified.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Verified Orgs</p>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 23px; height: 23px;" src="img/sss05.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Follower Requests</p>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 23px; height: 24px;" src="img/02139.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Ads</p>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 24px; height: 25px;" src="img/sasasa202234.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Jobs</p>
+                <div style="display: flex; align-items: center; justify-content: center; border-radius: 7px; margin-left: 160px; width: 37px; height: 20px; color: #FFE0C2;  background-color: #491600;">
+                    <p style="font-size: 0.8rem;">Beta</p>
+                </div>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 26px; height: 26px;" src="img/mic.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Create your Space</p>
+            </div>
+            <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                <img style="margin-left: 15px; width: 26px; height: 28px;" src="img/682121.png" alt="">
+                <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Settings and Privacy</p>
+            </div>  
+        </div>
+        <div style="position: absolute; position: relative; top: 0; left: 0px; width: 1050px; height: 650px; border-right: 1px solid #2F3336;">
+            <div style="color: white; margin: 20px;">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div style="display: flex; position: relative; width: 1050px; height: 500px;">
+                <video loop autoplay style="background-position: center; background-size: cover; width: 550px; height: 450px; position: absolute; top: 30px; left: 260px;" autoplay src="img/grok.mp4"></video>
+            </div>
+            <div style="text-align: center;">
+                    <p style="color: white; font-family: 'beko'; font-size: 2rem;">Grok something</p>
+                    <p style="color: #71767B; font-family: Arial, Helvetica, sans-serif; margin-top: 10px;">Premium subscribers can now use our most advanced AI, Grok, on X.</p>
+                    <div style="justify-content: center; display: flex;">
+                        <p style="align-items: center; display: flex; justify-content: center; cursor: pointer; font-family: 'beko'; font-size: 1rem; background-color: #E7E9EA; width: 156px; height: 44px; margin-top: 15px; border: none; border-radius: 20px;"><a style="margin-top: 25px; width: 156px; height: 44px; color: black; text-decoration: none; " href="premium.html">Subscribe now</a></p>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

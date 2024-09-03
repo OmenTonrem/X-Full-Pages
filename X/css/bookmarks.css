@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+#yonlendirici #sa:hover {
+    border-radius: 20px;
+    /* color: black; */
+    cursor: pointer;
+    /* opacity: 0.6; */
+    /* translate: ; */
+    background-color: rgba(57, 55, 55, 0.4); 
+}
+@font-face {
+    font-family: 'ForX'; /* Buraya bir isim verin */
+    src: url('../arial/ARIALBLACKITALIC.TTF'); /* .ttf dosyasının yolunu ekleyin */
+    }
+@font-face {
+    font-family: 'beko'; /* Buraya bir isim verin */
+    src: url('../arial/ARIALBD\ 1.TTF'); /* .ttf dosyasının yolunu ekleyin */
+    }
+a {
+    text-decoration: none;
+}
+.main {
+    
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    
+}
+#trend:hover {
+    background-color: rgba(57, 55, 55, 0.4);
+}
+#yonlendirici #sa {
+    transition: black 0.3s ease;
+}
+#kisi:hover {
+    background-color: rgb(43, 43, 44);
+}
+#options:hover {
+    background-color: #16181C;
+}
+#yonlendirici {
+   
+    /* align-items: center; */
+    position: relative;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-family: 'beko';
+    margin-left: 150px;
+    width: 250px;
+    /* border: 2px solid white; */
+}

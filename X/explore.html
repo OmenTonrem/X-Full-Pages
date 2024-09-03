@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="img/Ekran görüntüsü 2024-07-15 012154.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Now / X</title>
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <div  class="main" >
+        <div id="yonlendirici">
+            <div>
+                <i id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; font-size: 2rem; margin-top: 10px; margin-bottom: 10px;" class="fa-brands fa-x-twitter"></i>
+                <a style="color: white;" href="home.html"><p id="sa" style="margin-left: -20px; display: flex; justify-content: center; align-items: center; width: 135px; height: 50px; font-size: 1.1rem;"><i style="align-items: center; font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-house"></i>Home</p></a>
+                <a style="color: white;" href="explore.html"><p id="sa" style="margin-left: -20px; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-magnifying-glass"></i>Explore</p></a>
+                <a style="color: white;" href="notifications.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 180px; height: 50px; font-size: 1.1rem; " ><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-regular fa-bell"></i>Notifications</p></a> <!-- <i class="fa-solid fa-bell"></i> -->
+                <a style="color: white;" href="message.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 155px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-envelope"></i>Messages</p></a>
+                <a style="color: white;" href="grok.html"><p id="sa" style="margin-left: -25px; display: flex; justify-content: center; align-items: center; width: 130px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-paper-plane"></i>Grok</p></a> 
+                <a style="color: white;" href="bookmarks.html"><p id="sa" style="margin-left: -10px; display: flex; justify-content: center; align-items: center; width: 160px; height: 50px; font-size: 1.1rem; "><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-bookmark"></i>Bookmarks</p></a>
+                <a style="color: white;" href="community.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 185px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-users"></i>Communities</p></a>
+                <a style="color: white;" href="premium.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 150px; height: 50px; font-size: 1.1rem;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-brands fa-x-twitter"></i>Premium</p></a>
+                <a style="color: white;" href="profile.html"><p id="sa" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 130px; height: 50px; font-size: 1.1rem; ;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-user"></i>Profile</p></a>
+                <p id="sa" onclick="settings()" onblur="settingsnone()" style="margin-left: -15px; display: flex; justify-content: center; align-items: center; width: 120px; height: 50px; font-size: 1.1rem; ;"><i style="font-size: 1.5rem; margin-right: 20px;" class="fa-solid fa-bars"></i>More</p>
+            </div>
+            <button style="border: none; cursor: pointer; color: white; background-color: #1D9BF0; margin-top: 15px; width: 233px; border-radius: 30px; font-family: 'beko'; font-size: 1.1rem; height: 50px;">Post</button>
+            <div>
+                <div id="kisi" style="cursor: pointer; margin-top: 30px; display: flex; width: 250px; border-radius: 30px;">
+                    <img style=" border-radius: 40px; width: 50px; height: 50px;" src="img/deneme1.png" alt="">
+                    <div style="display: flex; flex-direction: column">
+                        <p style="cursor: default; font-family: 'beko'; margin-left: 5px; margin-top: 10px;">OmenTonrem <i style="font-size: 0.8rem;" class="fa-solid fa-lock"></i></p>
+                        <p style="cursor: default; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #71767B;">@Omen</p>
+                    </div>
+                    <div id="na"> 
+                        <i style="cursor: pointer; margin-top: 17px; margin-left: 40px; font-size: 1.3rem;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div id="Settings" style="display: none; flex-direction: column; box-shadow: 0 0 8px rgba(244, 244, 239, 0.8); position: absolute; left: -5px; bottom: 140px; z-index: 10; background-color: #000; border-radius: 15px; width: 318px; height: 448px;">
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 22px; height: 28px;" src="img/lists.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Lists</p>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 25px; height: 18px;" src="img/moni.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Monetization</p>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 20px; height: 24px;" src="img/verified.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Verified Orgs</p>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 23px; height: 23px;" src="img/sss05.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Follower Requests</p>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 23px; height: 24px;" src="img/02139.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Ads</p>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 24px; height: 25px;" src="img/sasasa202234.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Jobs</p>
+                        <div style="display: flex; align-items: center; justify-content: center; border-radius: 7px; margin-left: 160px; width: 37px; height: 20px; color: #FFE0C2;  background-color: #491600;">
+                            <p style="font-size: 0.8rem;">Beta</p>
+                        </div>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 26px; height: 26px;" src="img/mic.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Create your Space</p>
+                    </div>
+                    <div id="options" style="cursor: pointer; width: 318px; height: 56px; display: flex; align-items: center;">
+                        <img style="margin-left: 15px; width: 26px; height: 28px;" src="img/682121.png" alt="">
+                        <p style="font-family: 'beko'; margin-left: 25px; font-size: 1.2rem;">Settings and Privacy</p>
+                    </div>  
+                </div>
+            </div>
+            
+        </div>
+       <div id="ysal" style="overflow-y: auto;  overflow-x: hidden;">
+        <div style=" position: relative; width: 600px; height: 16000px; border: 1px solid #2F3336; display: flex; flex-direction: column;">
+            <div id="saga" style=" display: flex; left: 20px; position: absolute; top: 8px; ">
+                        
+                <i id="ll" style=" position: absolute; top: 10px; left: 3px; margin-left: 12px; top: 10; z-index: 1; font-size: 1.2rem; color: #2F3336; " class="fa-solid fa-magnifying-glass"></i>
+                    <div id="inp" >
+                        <input onclick="olck()" onblur="an()" id="inp1" style="padding-right: 45px; font-size: 1rem; color: white;  padding-left: 50px; border-radius: 20px; border: none; width: 502px; height: 42px; background-color: #202327;" type="text" autocapitalize="sentences" autocomplete="off" autocorrect="off" placeholder="Search" spellcheck="false" enterkeyhint="search" type="text" dir="auto" aria-activedescendant="typeaheadFocus-0.05564283137717263" aria-autocomplete="list" aria-label="Search query" aria-owns="typeaheadDropdown-13" role="combobox">
+                        
+                    </div>
+                    <div id="flexolcak" style= "z-index: 1; position: absolute; top: 9px; right: 10px; display: none; justify-content: center; align-items: center; width: 25px; height: 25px; border-radius: 20px; background-color: #1D9BF0;">
+                        <i style=" font-size: 1.1rem;  padding: 4px 4px 4px 4px; " class="fa-solid fa-xmark"></i>
+                    </div>
+            </div>
+            <div style="display: flex;">
+                <div  id="ghs" style="margin-left: 5px; margin: 5px; margin-top: 10px; cursor: pointer; display: none; justify-content: center; align-items: center; border-radius: 20px; width: 40px; height: 40px; color: white;" >
+                    <i style="font-size: 1.2rem;" class="fa-solid fa-arrow-left"></i>
+                </div>
+                
+                <div style=" position: absolute; right: 0; top: 0px; display: flex; width: 30px; height: 30px; justify-content: center; align-items: center; text-align: end; margin: 15px; color: white;">
+                    <div style=" display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; border-radius: 15px;" id="omk">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="hahayt" style="border-bottom: 1px solid #2F3336; display: flex; justify-content: space-around; align-items: center; margin-top: 53px; width: 600px; height: 53px; font-family: 'beko'; color: #71767B;">
+                <div onclick="foryou()" class="hop" style="cursor: pointer; width: 110px; height: 53px;">
+                    <p  id="foryou"   style="cursor: pointer; color: white; display: flex; justify-content: center; align-items: center; margin-top: 15px; ">For you</p>
+                    <div id="foryouborder" style="display: block; margin-left: 30px; width: 50px; margin-top: 15px; border-radius: 5px; border-bottom: 4px solid #1D9BF0;"></div>
+                </div>
+                <div onclick="trending()"  class="hop" style="cursor: pointer; width: 110px; height: 53px;">
+                    <p id="trending"  style="cursor: pointer; display: flex; justify-content: center; align-items: center; margin-top: 15px;  color: #71767B;">Trending</p>
+                    <div id="trendingborder" style="display: none; margin-left: 30px; width: 50px; margin-top: 15px; border-radius: 5px; border-bottom: 4px solid #1D9BF0;"></div>
+                </div>
+                <div onclick="news()"  class="hop" style="cursor: pointer; width: 110px; height: 53px;">
+                    <p id="news"  style="cursor: pointer; display: flex; justify-content: center; align-items: center; margin-top: 15px;  color: #71767B;" >News</p>
+                    <div id="newsborder" style="display: none; margin-left: 30px; width: 50px; margin-top: 15px; border-radius: 5px; border-bottom: 4px solid #1D9BF0;"></div>
+                </div>
+                <div onclick="sports()"  class="hop" style="cursor: pointer; width: 110px; height: 53px;">
+                    <p id="sports"style="cursor: pointer; display: flex; justify-content: center; align-items: center; margin-top: 15px;  color: #71767B;" >Sports</p>
+                    <div id="sportsborder" style="display: none; margin-left: 30px; width: 50px; margin-top: 15px; border-radius: 5px; border-bottom: 4px solid #1D9BF0;"></div>
+                </div>
+                <div onclick="entertainment()"  class="hop" style="cursor: pointer; width: 160px; height: 53px;">
+                    <p id="entertainment" style="cursor: pointer; display: flex; justify-content: center; align-items: center; margin-top: 15px;  color: #71767B;">Entertainment</p>
+                    <div id="entertainmentborder" style="display: none; margin-left: 30px; width: 100px; margin-top: 15px; border-radius: 5px; border-bottom: 4px solid #1D9BF0;"></div>
+                </div>
+            </div>
+            <div id="hlour" style="display: none; flex-direction: column;">
+                <p style="font-family: 'beko'; margin: 15px; font-size: 1.3rem; color: white;">Turkey trends</p>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">1 · Trending</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Nimet Özdemir</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">3,670 posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">2 · Trending</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Ferit Edgü</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">21,9K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">3 ·  Only on X · Trending</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#pazartesi</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">3M posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">4 · Trending in Politics</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">U.S. President Joe Biden</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">3,6M posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">6 · Trending in Politics</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#yasayaEVETdiyoruz</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">33,6K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">6 · Trending in Politics</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#YasayaHayır</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">33,6K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div id="simdisports" style="display: none; flex-direction: column;">
+                <!-- <p style="font-family: 'beko'; margin: 15px; font-size: 1.3rem; color: white;">Trending in Sports</p> -->
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Sports</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#WWERaw</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">153K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Sports</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Liv Morgan</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">18.6K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Sports</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Uncle Howdy</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">10.5K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Sports</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Pep Guardiola</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">18.9K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Sports</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Rhea</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">31.9K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Sports</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Osimhen</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">15.4K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                
+
+            </div>
+            <div id="mlak" style="display: none; flex-direction: column;">
+                <!-- <p style="font-family: 'beko'; margin: 15px; font-size: 1.3rem; color: white;">Turkey trends</p> -->
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Politics</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Malema</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">18.7K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Business & finance</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Personal Tax</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">5,024 posts</p>
+                    <div style="display: flex;">
+                        <i  id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer; position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Politics</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#Kamala2024</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">37K posts</p>
+                    <div style="display: flex;">
+                        <i  id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Politics</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Anambra</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">10.8K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Business & finance</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Retail Investors</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">3,6K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Business & finance</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#EthereumETF</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">1,460 posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- <div style=" background-color: yellow; width: 600px; height: 60000px; "></div> -->
+
+            
+
+            <div id="klas" style="display: none; flex-direction: column; height: 1100px; overflow: auto;">
+                <!-- <p style="font-family: 'beko'; margin: 15px; font-size: 1.3rem; color: white;">Turkey trends</p> -->
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; position: relative;">
+                    <div style="width: 600px; margin-top: -10px; margin-left: -15px;" class="image-container">
+                        
+                        <img style="cursor: pointer; color: white;" src="img/sa.jpeg" alt="Açıklama" class="toned-image">
+                        
+                        <div class="image-overlay"></div>
+                        
+                    </div>
+                    <p style="font-family: 'beko'; font-size: 1.5rem; position: absolute; bottom: 50px; color: white;">Premios Juventud 2024</p>
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; position: absolute; bottom: 30px; color: white;">Awards · LIVE</p>
+                </div>
+                <div style="margin-top: -20px; cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Entertainment</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Doraemon</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">12.2K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer; position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Music</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">SNSD</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">10.4K posts</p>
+                    <div style="display: flex;">
+                        <i  id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Korean music</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">mingyu</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">290.8K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Business & finance</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">Retail Investors</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">3,6K posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div style="cursor: pointer; margin-left: 15px; margin-top: 10px; margin-bottom: 25px; position: relative;">
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: #71767B;">Trending in Business & finance</p>
+                    <p style="margin-top: 5px; color: #E7E9EA; font-family: 'beko';">#EthereumETF</p>
+                    <p style="margin-top: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 0.7rem; color: #71767B;">1,460 posts</p>
+                    <div style="display: flex;">
+                        <i id="ksss" style="padding: 5px; border-radius: 15px; cursor: pointer;  position: absolute; right: 25px; top: 5px;" class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+            <div id="jsjs">
+                <div class="image-container">
+                    <img style="cursor: pointer; color: white;" src="img/k2ZW_Ys7.jpeg" alt="Açıklama" class="toned-image">
+                    
+                    <div class="image-overlay"></div>
+                    
+                </div>
+                <p style="cursor: pointer; font-family: 'beko'; font-size: 1.5rem; color: white; margin-left: 15px; z-index: 1; margin-top: -60px;">2024 Republican National Convention</p>
+                <p style="cursor: pointer; font-family: Arial, Helvetica, sans-serif; font-size: 0.8rem; color: white; z-index: 1;  margin-left: 15px; margin-top: 5px;">Politics · Yesterday</p>
+                <p style="font-family: 'beko'; font-size: 1.3rem; color: white; margin: 15px; margin-top: 25px;">Trends for you</p>
+                <div style="display: flex;">
+                    <div id="trend" style="cursor: pointer; width: 566px; height: 82px; display: flex; flex-direction: column;">
+                        <p style="width: 566px; font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Politics · Trending</p>
+                        <p style="font-family: 'beko'; width: 566px; color: #fff; margin-left: 15px; margin-top: 5px;">#istifaRteistifa</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px; width: 566px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">30.5k posts</p>
+                    </div>
+                    <div style="width: 50px; height: 50px; border-radius: 20px; margin-right: 10px; padding: 5px 5px 5px 5px; display: flex; align-items: center; justify-content: center;"  id="oldudu"><i style="cursor: pointer; color: #71767B;" class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div style="display: flex;">
+                    <div id="trend" style="cursor: pointer; width: 566px; height: 82px; display: flex; flex-direction: column;">
+                        <p style="width: 566px; font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Politics · Trending</p>
+                        <p style="font-family: 'beko'; width: 566px; color: #fff; margin-left: 15px; margin-top: 5px;">#intihar</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px; width: 566px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">30.5k posts</p>
+                    </div>
+                    <div style="width: 50px; height: 50px; border-radius: 20px; margin-right: 10px; padding: 5px 5px 5px 5px; display: flex; align-items: center; justify-content: center;"  id="oldudu"><i style="cursor: pointer; color: #71767B;" class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div style="display: flex;">
+                    <div id="trend" style="cursor: pointer; width: 566px; height: 82px; display: flex; flex-direction: column;">
+                        <p style="width: 566px; font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; margin-top: 10px; color: #71767B;">Politics · Trending</p>
+                        <p style="font-family: 'beko'; width: 566px; color: #fff; margin-left: 15px; margin-top: 5px;">Yusuf Tekin</p>
+                        <p style="font-size: 0.8rem; margin-top: 5px; width: 566px; font-family: Arial, Helvetica, sans-serif; margin-left: 15px; color: #71767B;">30.5k posts</p>
+                    </div>
+                    <div style="width: px; height: 50px; border-radius: 20px; margin-right: 10px; padding: 5px 5px 5px 5px; display: flex; align-items: center; justify-content: center;"  id="oldudu"><i style="cursor: pointer; color: #71767B;" class="fa-solid fa-ellipsis"></i></div>
+                </div>
+            </div>
+            
+        </div>
+       </div>
+        <div style="margin-top: 15px; border-radius: 20px; margin-left: 30px; width: 348px; height: 295px; background-color: black; border: 1px solid #2F3336;">
+            <div style="margin: 15px;">
+                <p style="color: white; font-family: 'beko'; font-size: 1.3rem;">Who to follow</p>
+                <div style="margin-top: 20px; display: flex;">
+                    <img style="width: 40px; height: 40px; border-radius: 20px;" src="img/follow1r.jpg" alt="">
+                    <div style="display: flex;">
+                        <div style="margin-left: 10px; font-family: 'beko'; color: white;">
+                            <p style="font-size: 0.9rem;">Anytime Fitness</p>
+                            <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 3px; font-size: 0.9rem; color: #64686D;">@AnytimeFitness</p>
+                        </div>
+                        <div style="margin-left: 70px;">
+                            <button style="cursor: pointer; font-family: 'beko'; border-radius: 20px; border: none; width: 78px; height: 32px; background-color: white; color: black;">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; display: flex;">
+                    <img style="width: 40px; height: 40px; border-radius: 20px;" src="img/-gber.png" alt="">
+                    <div style="display: flex;">
+                        <div style="margin-left: 10px; font-family: 'beko'; color: white;">
+                            <p style="font-size: 0.9rem;">Aytekin</p>
+                            <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 3px; font-size: 0.9rem; color: #64686D;">@asamiyorumki</p>
+                        </div>
+                        <div style="margin-left: 80px;">
+                            <button style="cursor: pointer; font-family: 'beko'; border-radius: 20px; border: none; width: 78px; height: 32px; background-color: white; color: black;">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; display: flex;">
+                    <img style="width: 40px; height: 40px; border-radius: 20px;" src="img/_bigger.jpg" alt="">
+                    <div style="display: flex;">
+                        <div style="margin-left: 10px; font-family: 'beko'; color: white;">
+                            <p style="font-size: 0.9rem;">Fabrizio Romano</p>
+                            <p style="font-family: Arial, Helvetica, sans-serif; margin-top: 3px; font-size: 0.9rem; color: #64686D;">@FabrizioRomano</p>
+                        </div>
+                        <div style="margin-left: 65px;">
+                            <button style="cursor: pointer; font-family: 'beko'; border-radius: 20px; border: none; width: 78px; height: 32px; background-color: white; color: black;">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px;">
+                    <a style="color: #1677B8; margin-top: 90px; font-family: Arial, Helvetica, sans-serif;" href="">Show more</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <div style=" background-color: black; width: 0.5px; height: 60000px;"></div> -->
+    <script src="js/script.js"></script>
+</body>
+</html>
